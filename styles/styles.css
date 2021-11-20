@@ -1,0 +1,49 @@
+/* PAllete 
+#264653   - Charcoal
+#2A9D8F   - Persian Green
+#E9C46A   - Orange Yellow Crayola
+#F4A261   - Sandy Brown
+#E76F51   - Burnt Sienna
+#005f73    - Rich Black FOGRA 29
+*/
+
+/* Global style
+------------------------*/
+body {
+    color: #264653;
+}
+img {
+    width: 300px;  
+}
+a {
+    color: #2A9D8F;
+    text-decoration: none;
+}
+
+/* Profile
+------------------------*/
+header {
+    background: #E9C46A;
+}
+
+/*Projects
+------------------------*/
+.projects {
+
+}
+/*Work expirience
+------------------------*/
+.work-experience {
+    background: #E76F51;
+}
+/*Education 
+------------------------*/
+.education {
+    background: #2A9D8F;
+}
+/*Contact Info
+------------------------*/
+
+footer {
+    background: #005f73;
+}
