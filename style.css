@@ -49,6 +49,25 @@ a:focus {
 h2 {
   margin: 0%;
 }
+
+.item-details h3 + p {
+  font-style: italic;
+}
+
+.item-details h3 ~ p {
+  margin: 0;
+}
+
+.divider > section {
+  border-bottom: 2px dashed darkgray;
+  padding: 20px 0;
+}
+
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+
+
 /* Profile
 --------------------------*/
 
@@ -76,8 +95,7 @@ header {
 
 .project-item {
   overflow: hidden;
-  border-bottom: 2px dashed darkgray;
-  padding: 20px 0;
+
 }
 .project-item img {
   float: left;
