@@ -1,0 +1,123 @@
+/* PAllete 
+#264653   - Charcoal
+#2A9D8F   - Persian Green
+#E9C46A   - Orange Yellow Crayola
+#F4A261   - Sandy Brown
+#E76F51   - Burnt Sienna
+#005f73    - Rich Black FOGRA 29
+*/
+
+/* Global styles 
+--------------------------*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  color: #365434;
+}
+
+img {
+  width: 400px;
+}
+a:link {
+  color: darkolivegreen;
+}
+
+a:visited {
+  color: darkorchid;
+}
+
+a:hover {
+  color: darkseagreen;
+}
+a:focus {
+  outline: 1px solid darkslategray;
+}
+
+.content-wrap {
+  width: 900px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+h2 {
+  margin: 0%;
+}
+/* Profile
+--------------------------*/
+
+header {
+  background: darkcyan;
+  text-align: center;
+}
+
+/* Projects 
+--------------------------*/
+
+.projects .btn {
+  color: white;
+  text-decoration: none;
+  background: darkolivegreen;
+  border: 1px solid black;
+  box-shadow: 5px 5px;
+  padding: 0.5rem;
+  border-radius: 2px;
+  display: inline-block;
+}
+.projects .btn:hover {
+  background: rgba(85, 107, 47, 0.7);
+}
+
+.project-item {
+  overflow: hidden;
+  border-bottom: 2px dashed darkgray;
+  padding: 20px 0;
+}
+.project-item img {
+  float: left;
+  margin-right: 20px;
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
+/* Work Experience 
+--------------------------*/
+.work-experience {
+  background: darkgoldenrod;
+}
+
+.job-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+
+
+/* Education
+--------------------------*/
+
+/* Contact Info
+--------------------------*/
+footer {
+  background: darkgray;
+  text-align: center;
+}
+
+.contact-list {
+  list-style-type:none;
+  display: flex; 
+  justify-content: center;
+  padding: 0;
+}
+.contact-list a{
+  text-decoration: none;
+  padding: 15px;
+  display: inline-block;
+}
