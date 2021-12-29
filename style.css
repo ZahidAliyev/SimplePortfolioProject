@@ -20,6 +20,9 @@ html {
 }
 body {
   color: #365434;
+  font-family: "Actor", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 img {
@@ -41,12 +44,22 @@ a:focus {
 }
 
 .content-wrap {
-  width: 900px;
+  max-width: 800px;
+  width: 85%;
   margin: 0 auto;
   padding: 50px 0;
 }
-
+h1 {
+  font-size: 5rem;
+  line-height: 1;
+}
 h2 {
+  font-size: 3rem;
+}
+h1,
+h2 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
   margin: 0%;
 }
 
@@ -67,13 +80,11 @@ h2 {
   border-bottom: none;
 }
 
-
 /* Profile
 --------------------------*/
 
 header {
   background: darkcyan;
-  text-align: center;
 }
 
 /* Projects 
@@ -95,47 +106,84 @@ header {
 
 .project-item {
   overflow: hidden;
-
-}
-.project-item img {
-  float: left;
-  margin-right: 20px;
 }
 
 .project-item h3 {
-    margin-top: 0;
+  margin-top: 0;
 }
 /* Work Experience 
 --------------------------*/
 .work-experience {
-  background: darkgoldenrod;
+  background: #2a9d8f;
 }
-
-.job-item {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
-
-
 
 /* Education
 --------------------------*/
+
+.education {
+  background-image: url(./img/joanna-kosinska-unsplash.jpg);
+  background-size: cover;
+  background-position: top right;
+  padding-bottom: 100px;
+}
+
+.education p {
+  width: 60%;
+}
 
 /* Contact Info
 --------------------------*/
 footer {
   background: darkgray;
-  text-align: center;
 }
 
 .contact-list {
-  list-style-type:none;
-  display: flex; 
-  justify-content: center;
+  list-style-type: none;
+
   padding: 0;
 }
-.contact-list a{
+.contact-list a {
   text-decoration: none;
   padding: 15px;
   display: inline-block;
+}
+
+/* Responsive
+--------------------------*/
+
+@media screen and (min-width: 750px) {
+  header,
+  footer {
+    text-align: center;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 0.9;
+    margin-bottom: 1.2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+
+  .contact-list a{
+    padding: 5px;
+  }
 }
